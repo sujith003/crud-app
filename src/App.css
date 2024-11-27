@@ -1,38 +1,235 @@
+body {
+  font-family: 'Georgia', serif;  /* Elegant serif font with vintage charm */
+  background: linear-gradient(to bottom right, #F0F0F0, #E58E26);  /* Dual color gradient from light gray to warm gold */
+  color: #444444;  /* Muted dark gray for readability and warmth */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  width: 85%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);  /* Soft shadow for depth */
+  font-family: 'Georgia', serif;
+}
+
+h1 {
   text-align: center;
+  font-size: 3rem;
+  color: #1D2D50; /* Rich, vintage blue for a sophisticated touch */
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  border-bottom: 3px solid #E58E26; /* Golden accent line beneath the title */
+  padding-bottom: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+button {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: 2px solid #E58E26;
+  background-color: transparent;
+  color: #E58E26;
+  border-radius: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+button:hover {
+  background-color: #E58E26;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+button:focus {
+  outline: none;
+  border-color: #F39C12;  /* Gold color when focused */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input {
+  padding: 15px;
+  border: 2px solid #B3B3B3;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  color: #444444;
+  background-color: #F0F0F0;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #E58E26;
+  background-color: white;
+  outline: none;
+}
+
+
+
+table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+}
+
+table th {
+  background-color: #F7F7F7;
+  color: #1D2D50;
+  font-weight: 600;
+}
+
+table tr:hover {
+  background-color: #F0F0F0;
+}
+
+
+
+button.primary {
+  background-color: #1D2D50;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+button.primary:hover {
+  background-color: #182A45;
+}
+
+button.danger {
+  background-color: #E74C3C;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+button.danger:hover {
+  background-color: #F1948A;
+}
+
+button.success {
+  background-color: #2ECC71;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+button.success:hover {
+  background-color: #58D68D;
+}
+
+
+a {
+  text-decoration: none;
+  color: #E58E26;
+}
+
+a:hover {
+  color: #F39C12;
+  text-decoration: underline;
+}
+
+
+
+
+.link-btn {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-btn button {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  background-color: #1D2D50;
+  color: white;
+  border-radius: 6px;
+}
+
+.link-btn button:hover {
+  background-color: #182A45;
+}
+
+
+
+
+.home-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-btn button {
+  background-color: #1D2D50;
+  color: white;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+}
+
+.home-btn button:hover {
+  background-color: #182A45;
+}
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  table th, table td {
+    padding: 12px;
+  }
+
+  .link-btn button, .home-btn button {
+    width: 100%;
   }
 }
