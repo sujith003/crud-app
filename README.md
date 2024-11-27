@@ -18,7 +18,11 @@ The User Registration Application is a simple web application that enables users
 **Frontend:** React.js, HTML5, CSS3, JavaScript
 **Development Tools:** Visual Studio Code
 
+**Live Demo** https://crud-app-seven-sooty.vercel.app/
+
+# Installation Steps
+
 ```
-git clone https://github.com/<sujith003>/.git
+git clone https://github.com/sujith003/crud-app.git
 cd crud-app
 npm start
